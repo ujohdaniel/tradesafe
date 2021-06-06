@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/css/edit.css">
+<link rel="stylesheet" href="/static/css/base.css">
+
+<title>Register</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="back">
+    <button class="bck">
+        <a href="/"> Register</a>
+    </button>
+</div>
+
+<!-- form -->
+<div class="form">
+    <form action="/accounts/edit/{{edit_data.id}}" method="POST">
+        {{ reg_data.csrf_token }}
+        
+        {{ reg_data.name (placeholder='Name') }}
+        
+        {{ reg_data.account_details (placeholder='Account Details') }}
+
+        {{ reg_data.email (placeholder='Email') }}
+
+        {{ reg_data.amount_paid (placeholder='Amount Paid') }}
+        
+        {{ reg_data.phone_no (placeholder='Phone Number') }}
+
+        <div class="submit">
+            {{ reg_data.submit }}
+        </div>
+    </form>
+</div>
+<!-- end form -->
+{% endblock %}

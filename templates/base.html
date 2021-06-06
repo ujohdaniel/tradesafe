@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/base.css">
+
+    {% block head %}
+    {% endblock %}
+
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav>
+        <img src="/static/gallery/ts_logo.png" alt="">
+        <h1>
+            TRADE <span>SAFE</span>
+        </h1>
+        <div class="pd_acc">
+            <a href="/paidaccounts">
+                <img src="/static/gallery/files-and-folders.png" alt="">
+            </a>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    {% block body %}
+    {% endblock %}
+
+</body>
+</html>

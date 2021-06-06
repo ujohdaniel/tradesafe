@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/css/form.css">
+
+<title>Register</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="back">
+    <button class="bck">
+        <a href="/accounts"> Accounts</a>
+    </button>
+</div>
+
+<!-- form -->
+<div class="form">
+    <form action="/" method="POST">
+        {{ reg_data.csrf_token }}
+        
+        {{ reg_data.name (placeholder='Name') }}
+        
+        {{ reg_data.account_details (placeholder='Account Details') }}
+
+        {{ reg_data.email (placeholder='Email') }}
+
+        {{ reg_data.amount_paid (placeholder='Amount Paid') }}
+        
+        {{ reg_data.phone_no (placeholder='Phone Number') }}
+
+        <div class="submit">
+            {{ reg_data.submit }}
+        </div>
+    </form>
+</div>
+<!-- end form -->
+{% endblock %}

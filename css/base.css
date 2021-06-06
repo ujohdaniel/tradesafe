@@ -1,0 +1,45 @@
+/* Universal */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+nav{
+    background-color: white;
+    padding-top: 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 0 10px 0.1px black;
+}
+nav img{
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+nav h1{
+    align-self: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: rgb(155, 148, 148);
+    font-family: Segoe UI;
+}
+nav h1 span{
+    color: black;
+}
+.pd_acc {
+    align-self: center;
+    margin-top: .5rem;
+    margin-left: 5rem;
+}
+.pd_acc img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+/* end navbar */

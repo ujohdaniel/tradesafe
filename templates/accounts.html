@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/css/accounts.css">
+
+<title>Accounts</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="back">
+        <button class="bck">
+            <a href="/"> Register</a>
+        </button>
+</div>
+
+{% for reg_value in reg_values %}
+<div class="form">
+    <div class="hding">
+        <h3>{{reg_value.name}}</h3>
+        <p>{{reg_value.date}}</p>
+
+        <a href="/accounts/delete/{{reg_value.id}}">
+            <img src="../static/gallery/delete.png" alt="delete icon">
+        </a>
+        <a href="/accounts/edit/{{reg_value.id}}">
+            <img src="../static/gallery/edit.png" alt="delete icon">
+        </a>
+    </div>
+    <hr>
+    <div class="details">
+        <p class="title">Account Details:</p>
+        <p class="data">{{reg_value.account_details}}</p>
+    </div>
+    <hr>
+    <div class="details">
+        <p class="title">Email:</p>
+        <p class="data">{{reg_value.email}}</p>
+    </div>
+    <hr>
+    <div class="details">
+        <p class="title">Amount Paid:</p>
+        <p class="data">{{reg_value.amount_paid}}</p>
+    </div>
+    <hr>
+    <div class="details">
+        <p class="title">Phone Number:</p>
+        <p class="data">{{reg_value.phone_no}}</p>
+    </div>
+
+    <div class="submit">
+        <button class="paid">
+            <a href=#>PAID</a>
+        </button>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

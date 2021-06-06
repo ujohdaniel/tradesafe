@@ -1,0 +1,57 @@
+/* Universal */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.back{
+    text-align: right;
+    justify-content: right;
+    margin-top: 7rem;
+    margin-right: 3rem;
+}
+.back .bck{
+    padding: .7rem 2rem;
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0.1px black;
+}
+.back .bck a{
+    color: #001BA5;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* form */
+.form{
+    background-color: #d8d9db;
+    margin: 5rem 3rem;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+}
+.form input{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+}
+.form ::placeholder{
+    font-size: 1rem;
+    font-family: Segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(87, 85, 85);
+}
+.form .submit input{
+    background-color: #001BA5;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 50%;
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+    box-shadow: 0 0 10px 0.1px black;
+}
+/* end form */
